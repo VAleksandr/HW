@@ -4,11 +4,11 @@ const todo_description_text_area = document.getElementById('todo_description');
 const todos_container = document.querySelector('.main-wrapper__todos');
 const todos = [];
 
-
 const initApplication = () => {
   if (!localStorage.getItem('todos')) {
     localStorage.setItem('todos', JSON.stringify([]));
   }
+  
   outputOnPageTodos(JSON.parse(localStorage.getItem('todos')));
 }
 
@@ -31,6 +31,7 @@ const outputOnPageTodos = (outTodos) => {
   outTodos.forEach(todo => {
     const todo_title = document.createElement('h3');
     const todo_description = document.createElement('p');
+
     todo_title.innerText = todo.title;
     todo_description.innerText = todo.description;
     todo_container.append(todo_title, todo_description);
