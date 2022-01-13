@@ -1,0 +1,40 @@
+.main-wrapper {
+  width: 80%;
+  margin: 50px auto;
+}
+
+.main-wrapper__title {
+  margin-bottom: 20px;
+}
+
+.main-wrapper__submit-btn {
+  margin-top: 20px;
+}
+
+.main-wrapper__todos {
+  margin-top: 10px;
+  min-height: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 6px 12px; 
+}
+
+.main-wrapper__todos__container {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  display: grid;
+  grid-template-columns: 5fr 0.5fr;
+	grid-template-rows: 1fr 1fr; 
+}
+
+.todo_title_container {
+  grid-column: 1/3;
+  grid-row: 1/1;
+}
+
+.deleteTodoButton {
+  width: 70px;
+  height: 30px;
+  border-radius: 5px;
+}
