@@ -9,18 +9,6 @@
   margin: 100px;
 }
 
-.clock {
-  width: 175px;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
 p {
   font-size: 140px;
-}
-
-.seconds {
-  margin-right: 20px;
 }

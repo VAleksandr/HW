@@ -1,15 +1,11 @@
-const hours = document.getElementById('hours');
-const minutes = document.getElementById('minutes');
-const seconds = document.getElementById('seconds');
+const clockTegP = document.getElementById('clock');
 
-const addZero = (elementClock, numberData) => (numberData < 10) ? elementClock.textContent = '0' + numberData : elementClock.textContent = numberData;
+const addZero = (elementData) => (elementData < 10) ? '0' + elementData : elementData;
 
 const clock = () => {
-  const newDate = new Date();
+  const date = new Date();
 
-  addZero(hours, newDate.getHours());
-  addZero(minutes, newDate.getMinutes());
-  addZero(seconds, newDate.getSeconds());
+  clockTegP.textContent = addZero(date.getHours()) + ':' + addZero(date.getMinutes()) + ':' + addZero(date.getSeconds());
 }
 
 setInterval( () => clock(), 1000);
